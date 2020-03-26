@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Hank Quinlan, Horrible Cop, Launches Site"
-date: 2014-04-30
+title: "不懂需求的开发不是好测试"
+date: 2020-03-26
 ---
 
 Well. Finally got around to putting this old website together. 

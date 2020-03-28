@@ -6,3 +6,12 @@ title: 燕过留痕
 	<h1>Hi there, I'm Mr yang!</h1>
 	<p>no talk, show me the code</em> to do it. <a href="/about">about me...</a></p>
 </div>
+<div>
+	{% for post in site.posts offset:0 limit:2 %}
+		<li>
+			<span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+			<br />
+			<p>{{post.content | strip_html | strip_newlines | truncate: 100 }}</p>
+		</li>
+	{% endfor %}
+</div>

@@ -19,6 +19,11 @@ notes: active
 			<!-- Post info -->
 			<div class="noteinfo">
 			<!-- include some categories and tags maybe? -->
+				{% for tag in post.tags %}
+					<ul>
+						<li>{{ tag }}</li>
+					</ul>
+				{% endfor %}
 			</div>
 
 			<hr>

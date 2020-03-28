@@ -3,9 +3,9 @@ layout: default
 title: 燕过留痕
 ---
 <div class="blurb">
-	<quote>no talk, show me the code</em>. <a href="/about">about me...</a></quote>
+	<p>no talk, show me the code</em>. <a href="/about">about me...</a></p>
 </div>
-<div>
+<div style="margin-top:100px;">
 	{% for post in site.posts offset:0 limit:2 %}
 		<li>
 			<a href="{{ post.url }}" title="{{ post.title }}">

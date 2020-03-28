@@ -3,4 +3,5 @@ title: 孤舟蓑笠翁，独钓寒江雪
 description: 几缕想法，印之足下，寒来暑往，勿忘勿念。
 permalink: /blog/:year/:month/:day/:title
 intensedebate_identifier: DM1rD3SFZWuxdLRNPqId
-pager: 5 
+paginate: 5 
+paginate_path: /blog/page:num/

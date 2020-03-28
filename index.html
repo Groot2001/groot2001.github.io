@@ -8,9 +8,11 @@ title: 燕过留痕
 <div>
 	{% for post in site.posts offset:0 limit:2 %}
 		<li>
-			<span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-			<br />
-			<p>{{post.content | strip_html | strip_newlines | truncate: 100 }}</p>
+			<a href="{{ post.url }}" title="{{ post.title }}">
+				{{ post.title }}
+				</br >
+				{{post.content | strip_html | strip_newlines | truncate: 100 }}
+			</a>
 		</li>
 	{% endfor %}
 </div>
